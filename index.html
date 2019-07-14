@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>!DOCTYPE</title>
+   <meta charset="utf-8">
+   <link rel="stylesheet" href="index.css"></link>
+ </head>
+ <body>
+ <div class="main-grid">
+        <div class="main-header-nav">
+            <a class="main-header-nav-button">
+                <span class="nav-button-block"></span>
+                <span class="nav-button-block"></span>
+                <span class="nav-button-block"></span>
+                <span class="nav-button-block"></span>
+                <span class="nav-button-block"></span>
+                <span class="nav-button-block"></span>
+                <span class="nav-button-block"></span>
+                <span class="nav-button-block"></span>
+                <span class="nav-button-block"></span>
+            </a>
+        </div>
+        <div class="spec-area-contacts">
+        <p>Контакты:</p>
+        <p>8999999999 - хер моржовый</p>
+        <p>улица с красивым названием</p>  
+        </div>
+        <div class="main-header-hero">
+            <div class="main-header-hero-content">
+                <h3 class="offer-details">крутой</h3>
+                <h1>Алюминий</h1>
+                <p>Самые лучшие цены и тд и тп я хз что писать Саша</p>
+            </div>
+        </div>
+        <div class="spec-area-title">
+            <h2>Детали продукта</h2>
+        </div>
+        <div class="spec-area-image">
+        </div>
+        <div class="spec-area-details">
+            <div class="spec-title">
+                <h3>Рассчитать стоимость:</h3>
+                    <select id="cvet">
+                    <option value="al1">Алюминий 1 группа (эл/тех, цистерна, шина)</option>
+                    <option value="al2">Алюминий пищевой, оплетка</option>
+                    <option value="al3">Алюминиевый профиль, АД-31</option>
+                    <option value="al4">Алюминиевый профиль, АД-31 краш</option>
+                    <option value="al5">Алюминий моторный</option>
+                    <option value="al6">Алюминий смешанный</option>
+                    <option value="al7">Алюминий В92-95, 1915, 1925, кораб. копанка, цн. АМГ</option>
+                    <option value="al8">Алюминиевые диски</option>
+                    <option value="al9">Алюминий самолетный</option>
+                    <option value="al10">Алюминий баночка</option>
+                    <option value="al11">Алюминий фольга</option>
+                    <option value="al12">Алюминий типографский лист</option>
+                    <option value="al13">Алюминий стружка</option>
+                    </select>
+                    <input type="text" id="shirina" value="" placeholder="укажите количество от 1 тонны">
+                    <button onclick="raschitat();">Рассчитать стоимость</button>
+                    <div id="stoimost"></div>
+                    <script>
+                    function raschitat() {
+                    cvet  = document.getElementById('cvet').value;
+                    switch (cvet) {
+                       case "al1":
+                          cena = 97000;
+                          break
+                       case "al2":
+                          cena = 93100;
+                          break   
+                        case "al3":
+                          cena = 90200;
+                          break
+                        case "al3":
+                          cena = 90200;
+                          break
+                        case "al4":
+                          cena = 90200;
+                          break
+                        case "al5":
+                          cena = 90200;
+                          break
+                        case "al6":
+                          cena = 90200;
+                          break
+                        case "al7":
+                          cena = 90200;
+                          break
+                        case "al8":
+                          cena = 90200;
+                          break
+                        case "al9":
+                          cena = 90200;
+                          break
+                        case "al10":
+                          cena = 90200;
+                          break
+                        case "al11":
+                          cena = 90200;
+                          break  
+                        case "al12":
+                          cena = 90200;
+                          break
+                        case "al13":
+                          cena = 90200;
+                          break                                              
+                    }
+                    shirina  = document.getElementById('shirina').value;
+                    if(shirina == ""){
+                    alert("Вы не указали количество");                    
+                    } else {
+                    stoimost = ploschad*cena;
+                    document.getElementById('stoimost').innerHTML = "Стоимость равна: "+ stoimost +" р.";
+                    }
+                    }
+                    </script>
+            </div>
+        </div>
+    </div>
+ </body> 
+</html>
