@@ -1,0 +1,207 @@
+:root {
+  --main-nav-color: #555;
+  --spec-yellow: #ffc100;
+  --white-smoke: #f5f5f5;
+  --text-grey: #7d7d7d;
+  --title-font: "Roboto", sans-serif;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(to left, #414345, #232526);
+  font-family: var(--title-font);
+}
+
+.price{
+    padding: 20px 20px 0px 20px;
+    min-height: 200px;
+    border-radius: 5px;
+    max-width: 500px;
+    border: 5px solid #fff200;
+    background:#f9f9f9;
+}
+
+.calc_title{
+    font-size: 28px;
+    color: #ee1d25;
+    margin: 0 0 20px;
+}
+
+.result{
+    padding: 20px 0 0;
+    margin: 20px 0;
+    font-size: 24px;
+    border-top: 1px solid #e0e0e0;
+}
+
+span.total{
+    color: #ed1d25;
+}
+
+.calculator input[type="text"], select {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.main-grid {
+  display: grid;
+  grid-template-columns: 150px 400px auto;
+  grid-template-rows: 150px auto 350px;
+  height: 100vh;
+}
+
+.main-header-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--main-nav-color);
+  transition: 0.3s;
+}
+
+.main-header-nav:hover {
+  background-color: var(--spec-yellow);
+  cursor: pointer;
+}
+
+.main-header-nav-button {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 4px 4px 4px;
+  grid-template-rows: 4px 4px 4px;
+  grid-column-gap: 2px;
+  grid-row-gap: 2px;
+}
+
+.nav-button-block {
+  background-color: var(--white-smoke);
+}
+
+.offer-details {
+  text-transform: uppercase;
+  background-color: var(--main-nav-color);
+  color: var(--white-smoke);
+  font-size: 0.7rem;
+  font-weight: 300;
+  padding: 5px 8px;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.main-header-hero {
+  grid-column: 2 / 4;
+  grid-row: 1 / 3;
+  border-left: 1px solid var(--main-nav-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--white-smoke);
+}
+
+.spec-area-contacts {
+  font-size: 0.9rem;
+  line-height: 20px;
+  font-weight: 100;
+  color: var(--white-smoke);
+}
+.main-header-hero-content {
+  padding: 0 3rem;
+  width: 100%;
+  max-width: 600px;
+}
+
+.main-header-hero-content h1 {
+  font-size: 4.15rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.main-header-hero-content p {
+  font-size: 0.9rem;
+  line-height: 20px;
+  font-weight: 100;
+  color: var(--text-grey);
+}
+
+.spec-area-title {
+  grid-row: 3 / 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--spec-yellow);
+}
+
+.spec-area-title h2 {
+  display: flex;
+  color: #fff;
+  writing-mode: vertical-rl;
+  transform: rotate(-180deg);
+  align-self: center;
+  font-size: 1.15rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.spec-area-image {
+  border-left: 1px solid var(--spec-yellow);
+  background-image: url("https://www.metal-expo.ru/cache/fe/a8/fea868bf189cd7f587712e3aca5f0902.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  grid-row: 3 / 4;
+  grid-column: 2 / 3;
+}
+
+.spec-area-details {
+  padding: 50px 0 50px 50px;
+  grid-column: 3 / 4;
+  display: grid;
+  grid-template-columns: 400px 400px;
+  grid-column-gap: 50px;
+  grid-template-rows: 60px auto;
+  color: var(--white-smoke);
+  font-weight: 300;
+  background: linear-gradient(to right, rgba(34,34,34, 0.3), rgba(45,45,45,0.5));
+}
+
+.spec-area-details h2 {
+  font-weight: 500;
+  margin: 0;
+}
+
+.spec-area-one,
+.spec-area-two {
+  grid-row: 2 / 3;
+}
+
+.spec-area-one h2,
+.spec-area-two h2 {
+  font-weight: 500;
+  font-size: 0.95rem;
+  margin-bottom: 10px
+}
+
+.spec-title,
+.spec-area-one,
+.spec-area-two {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.spec-area-one p,
+.spec-area-two p {
+  font-weight: 300;
+  font-size: 0.85rem;
+  margin-top: 0;
+  margin-bottom: 40px;
+  color: var(--text-grey);
+}
+
+.spec-area-one p:last-child,
+.spec-area-two p:last-child {
+  margin-bottom: 0
+}
+
